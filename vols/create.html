@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="width: 100%">{% block title %} Add a New Student {% endblock %}</h1>
+    <form method="post">
+        <p>
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname"
+                   placeholder="Full name">
+            </input>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email"
+                   placeholder="Your email">
+            </input>
+        </p>
+
+        <p>
+            <select name="job">
+                <option disabled selected value="">select job</option>
+                <option value="Registration">Registration</option>
+                <option value="Course Marshal">Canaday</option>
+                <option value="Water Stop">Grays</option>
+                <option value="Finish Line">Greenough</option>
+                <option value="Party Set-Up">Hollis</option>
+                <option value="Clean-Up">Holworthy</option>
+            </select>
+        </p>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+{% endblock %}
